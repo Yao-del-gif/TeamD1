@@ -89,3 +89,7 @@ header p {
 .signbtn:hover {
     background-color: rgb(61, 61, 61);
 }
+
+.copyright {
+    text-align: center;
+}

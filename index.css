@@ -1,28 +1,26 @@
-.slide {
-    height: 100vh;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-} 
+body {
+    background-color: peachpuff;
+}
 
-.slide {
+.slic {
+    height: 100vh;
     scroll-snap-align: start;
-    height: 100vh;
-} 
+    background-color: peachpuff;
+}
 
-.slide2 { 
+.slide2 {
     display: grid;
-    grid-template-columns:
-    repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
 }
 
 .navbar1 {
-    grid-column: 5 / 7;
-    grid-row: 1 / 2;
+    grid-column: 4 / 9;
+    grid-row: 1;
     display: flex;
+    justify-content: center;
     gap: 20px;
-    transform: translate(-10px, 30px);
+    transform: translateY(30px);
 }
 
 .links1 {
