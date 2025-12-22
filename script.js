@@ -60,10 +60,12 @@ document.querySelectorAll('.add-btn').forEach(btn => {
                 btn.classList.add('added');
                 label.textContent = 'Remove';
                 cartCount++;
+                showToast('Item added to cart');
             } else {
                 btn.classList.remove('added');
                 label.textContent = 'Add';
                 cartCount--;
+                showToast('Item removed from cart');
             }
 
             cartCounter.textContent = cartCount;
@@ -76,3 +78,14 @@ document.querySelectorAll('.add-btn').forEach(btn => {
         }, 150);
     });
 });
+
+const toast = document.getElementById('toast');
+
+function showToast(message) {
+    toast.textContent = message;
+    toast.classList.add('show');
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2000);
+}

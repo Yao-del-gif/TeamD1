@@ -68,8 +68,9 @@ body {
 }
 
 #review > a {
-        color: black;
-    text-decoration: underline;
+    color: black;
+    text-decoration: none;
+    cursor: default;
 }
 
 .imgcontainer {
@@ -127,7 +128,7 @@ body {
 }
 
 #img1:hover {
-    transform: translate3d(-120px, -120px, 60px) rotateZ(-6deg) scale(1.15);
+    transform: translate3d(-260px, -120px, 60px) rotateZ(-6deg) scale(1.15);
     box-shadow: 0 30px 60px rgba(0,0,0,0.35), 0 0 0 2px rgba(255,255,255,0.3);
     z-index: 10;
     filter: brightness(1.05) contrast(1.05);

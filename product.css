@@ -172,4 +172,30 @@
     100% { transform: scale(1); }
 }
 
+.copyright {
+    position: absolute;
+    top: 7600px;
+    left: 50%;
+    text-align: center;
+}
 
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2ecc71; /* green */
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Visible state */
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
