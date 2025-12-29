@@ -42,10 +42,13 @@
             <a href="#" class="catlinks" data-category="sneakers">Sneakers</a>
         </div>
 
-        <div class="category-section" data-category="bags">
-            <h2 class="category-title">Bags</h2>
+    <div class="category-section" data-category="bags">
+    <div class="category-header">
+        <h2 class="category-title bagsfix">bags</h2>
+        <button class="see-more bagsfix" onclick="toggleCategory(this)">See more</button>
+    </div>
 
-            <div class="products">
+    <div class="product2 slider bagsfix">
 
         <div class="items images" data-category="bags" data-price="38,000" data-name="Cinnamoroll">
 
@@ -123,24 +126,33 @@
             </div>
         </div>
 
-<!-- HANDBAGS -->
+    <div class="category-section" data-category="handbags">
+    
+    <div class="category-header">
+        <h2 class="category-title bagsfix">Handbags</h2>
+        <button class="see-more bagsfix" onclick="toggleCategory(this)">See more</button>
+    </div>
 
-        <div class="category-section" data-category="handbags">
-            <h2 class="category-title">Handbags</h2>
-            <div class="product2">
-                <div class="items images" data-category="handbags" data-price="22,800" data-name="NALLCHEER Vegetable basket street fashion handbag">
+    <div class="product2 slider bagsfix">
+        <div class="items images" data-category="handbags" data-price="22,800"
+            data-name="NALLCHEER Vegetable basket street fashion handbag">
 
-            <div class="img-wrap"><img src="productimages/handbags/NALLCHEER.png" alt="NALLCHEER"></div>
-            <span class="item-name">NALLCHEER Vegetable basket street fashion handbag</span><span class="item-price">Ks 22,800</span><button class="add-btn">Add</button>
+            <div class="img-wrap">
+                <img src="productimages/handbags/NALLCHEER.png" alt="NALLCHEER">
+            </div>
 
-                </div>
-                <div class="items images" data-category="handbags" data-price="25,500" data-name="Fashion2way Bag with keychain">
+            <span class="item-name">NALLCHEER Vegetable basket street fashion handbag</span>
+            <span class="item-price">Ks 22,800</span>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <div class="items images" data-category="handbags" data-price="25,500" data-name="Fashion2way Bag with keychain">
 
             <div class="img-wrap"><img src="productimages/handbags/handbag2.png" alt="Fashion2way Bag with keychain"></div>
             <span class="item-name">Fashion2way Bag with keychain</span><span class="item-price">Ks 25,500</span><button class="add-btn">Add</button>
 
                 </div>
-                <div class="items images" data-category="handbags" data-price="25,000" data-name="Yolen Luxury Cross Body Purse Bag">
+         <div class="items images" data-category="handbags" data-price="25,000" data-name="Yolen Luxury Cross Body Purse Bag">
 
             <div class="img-wrap"><img src="productimages/handbags/handbag3.png" alt="Yolen Luxury Cross Body Purse Bag"></div>
             <span class="item-name">Yolen Luxury Cross Body Purse Bag</span><span class="item-price">Ks 25,000</span><button class="add-btn">Add</button>
@@ -200,10 +212,17 @@
             <span class="item-name">Leather Handbag</span><span class="item-price">Ks 24,500</span><button class="add-btn">Add</button>
             </div>
         </div>
+    </div>
+
+</div>
 
         <div class="category-section" data-category="necklaces">
-            <h2 class="category-title">Necklaces</h2>
-            <div class="product3">
+        <div class="category-header">
+            <h2 class="category-title">necklaces</h2>
+            <button class="see-more" onclick="toggleCategory(this)">See more</button>
+        </div>
+
+        <div class="product2 slider">
                 <div class="items images" data-category="necklaces" data-price="9,000" data-name="Butterfly Fashion Fancy Necklace">
 
             <div class="img-wrap"><img src="productimages/necklaces/necklace1.png" alt="Butterfly Fashion Fancy Necklace"></div>
@@ -291,8 +310,12 @@
         </div>
 
         <div class="category-section" data-category="shirts">
-            <h2 class="category-title">Shirts</h2>
-            <div class="product4">
+        <div class="category-header">
+            <h2 class="category-title">shirts</h2>
+            <button class="see-more" onclick="toggleCategory(this)">See more</button>
+        </div>
+
+        <div class="product2 slider">
                 <div class="items images" data-category="shirts" data-price="14,300" data-name="SMM30-76 Local Made Shirt">
 
             <div class="img-wrap"><img src="productimages/shirts/shirt1.png" alt="SMM30-76 Local Made Shirt"></div>
@@ -371,8 +394,12 @@
 
 
         <div class="category-section" data-category="sneakers">
-            <h2 class="category-title">Sneakers</h2>
-            <div class="product5">
+        <div class="category-header">
+            <h2 class="category-title">sneakers</h2>
+            <button class="see-more" onclick="toggleCategory(this)">See more</button>
+        </div>
+
+        <div class="product2 slider">
                 <div class="items images" data-category="sneakers" data-price="45,000" data-name="Vans OFF The Wall">
 
 
@@ -449,28 +476,28 @@
             </div>
         </div>
     </div>
+
     <footer class="copyright">
         <p>&copy; TeamD N . H . S</p>
     </footer>
     <div id="toast">Item added to cart</div>
-    <!-- CART SLIDER -->
-<div class="cart-overlay"></div>
+    <div class="cart-overlay"></div>
 
-<div class="cart-slider">
-    <div class="cart-header">
-        <h2>Your Cart</h2>
-        <button class="close-cart">✕</button>
-    </div>
-
-    <div class="cart-items"></div>
-
-    <div class="cart-footer">
-        <div class="cart-total">
-            Total: <span id="cart-total">Ks 0</span>
+    <div class="cart-slider">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart">✕</button>
         </div>
-        <button class="buy-now">Buy Now</button>
+
+        <div class="cart-items"></div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                Total: <span id="cart-total">Ks 0</span>
+            </div>
+            <button class="buy-now">Buy Now</button>
+        </div>
     </div>
-</div>
 
 <script src="script.js"></script>
 </body>
